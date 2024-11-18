@@ -28,7 +28,7 @@ public class Expense {
 	}
 	
 	public Expense(int userId, String description, double amount, String expType, String middleMan,
-			PaymentMethod paymentMethod, LocalDate expDate) {
+			PaymentMethod paymentMethod) {
 		this.expId = EXPENSE_ID_GENERATOR++;
 		this.userId = userId;
 		this.description = description;
