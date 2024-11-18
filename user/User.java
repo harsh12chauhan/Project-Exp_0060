@@ -26,8 +26,7 @@ public class User {
 		this.dateOfRegister = LocalDate.now();
 	}
 	
-	public User(String userName, String email, String password, UserType userType, boolean isLogedIn,
-			LocalDate dateOfRegister) {
+	public User(String userName, String email, String password, UserType userType, boolean isLogedIn) {
 		this.userId = USER_ID_GENERATOR++;
 		this.userName = userName;
 		this.email = email;
@@ -35,6 +34,14 @@ public class User {
 		this.userType = userType;
 		this.isLogedIn = isLogedIn;
 		this.dateOfRegister = LocalDate.now();
+	}
+	
+	public String getEmail() {
+		return this.email;
+	}
+	
+	public String getPassword() {
+		return this.password;
 	}
 
 	@Override
