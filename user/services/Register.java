@@ -9,6 +9,7 @@ import com.projectexp0060.user.utils.UserType;
 public class Register {
 	public static void register(Scanner sc) {
 		
+		sc.nextLine();
 		System.out.println("Enter username");
 		String userName = sc.nextLine();
 		

@@ -8,6 +8,7 @@ import com.projectexp0060.user.User;
 public class Login {
 	public static boolean login(Scanner sc) {
 		
+		sc.nextLine();
 		System.out.println("Enter your email");
 		String email = sc.nextLine();
 		
@@ -16,11 +17,10 @@ public class Login {
 		
 		//validate 
 		for(User user:Variables.users) {
-			if ( user.getEmail() == email && user.getPassword() == password ) {
+			if ( user.getEmail().equals(email) && user.getPassword().equals(password) ) {
 				return true;
 			}
 		}
-		
 		return false;
 	}
 }
