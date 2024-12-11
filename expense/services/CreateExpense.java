@@ -1,4 +1,4 @@
-package com.projectexp0060.expense.services;
+	package com.projectexp0060.expense.services;
 
 import java.util.Scanner;
 
@@ -6,7 +6,6 @@ import com.projectexp0060.expense.Expense;
 import com.projectexp0060.expense.utils.PaymentMethod;
 
 public class CreateExpense {
-	
 	public static Expense create(Scanner sc) {	
 		
 		System.out.println("Enter Userid");
